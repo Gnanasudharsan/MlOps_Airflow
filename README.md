@@ -87,7 +87,15 @@ When successful, all tasks will appear green ✅:
 ``` bash
 load_data → data_preprocessing → build_save_model → evaluate_model
 ```
+---
 
+## 🖼️ Airflow DAG Screenshots
+
+### ✅ DAG Success (All Tasks Completed)
+![Airflow DAG Success](screenshots/dag_success.png)
+
+### 🧾 Task Logs View
+![Airflow Task Logs](screenshots/task_logs.png)
 ⸻
 
 📊 Output Files
