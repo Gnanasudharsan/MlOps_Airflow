@@ -1,0 +1,24 @@
+[2025-10-20T17:10:39.514+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Airflow_Lab1_HeartDisease.data_preprocessing manual__2025-10-20T17:10:36.921213+00:00 [queued]>
+[2025-10-20T17:10:39.517+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Airflow_Lab1_HeartDisease.data_preprocessing manual__2025-10-20T17:10:36.921213+00:00 [queued]>
+[2025-10-20T17:10:39.517+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-20T17:10:39.517+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2025-10-20T17:10:39.517+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-20T17:10:39.523+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): data_preprocessing> on 2025-10-20 17:10:36.921213+00:00
+[2025-10-20T17:10:39.526+0000] {standard_task_runner.py:55} INFO - Started process 133 to run task
+[2025-10-20T17:10:39.527+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Airflow_Lab1_HeartDisease', 'data_preprocessing', 'manual__2025-10-20T17:10:36.921213+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmp6w_78azm']
+[2025-10-20T17:10:39.528+0000] {standard_task_runner.py:83} INFO - Job 48: Subtask data_preprocessing
+[2025-10-20T17:10:39.551+0000] {task_command.py:388} INFO - Running <TaskInstance: Airflow_Lab1_HeartDisease.data_preprocessing manual__2025-10-20T17:10:36.921213+00:00 [running]> on host e1d6f0694ad7
+[2025-10-20T17:10:39.577+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=gnanasudharsan
+AIRFLOW_CTX_DAG_ID=Airflow_Lab1_HeartDisease
+AIRFLOW_CTX_TASK_ID=data_preprocessing
+AIRFLOW_CTX_EXECUTION_DATE=2025-10-20T17:10:36.921213+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-10-20T17:10:36.921213+00:00
+[2025-10-20T17:10:39.589+0000] {logging_mixin.py:137} INFO - ✅ Data Scaled & Saved: (300, 14)
+[2025-10-20T17:10:39.589+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-10-20T17:10:39.593+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=Airflow_Lab1_HeartDisease, task_id=data_preprocessing, execution_date=20251020T171036, start_date=20251020T171039, end_date=20251020T171039
+[2025-10-20T17:10:39.627+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-10-20T17:10:39.638+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
