@@ -16,24 +16,6 @@ To build a modular, automated pipeline in Airflow that:
 
 ---
 
-## 📂 Directory Structure
-
-MlOps_Airflow/
-├── dags/
-│   ├── Airflow_Lab1_HeartDisease.py     # Main DAG definition
-│   └── src/lab.py                       # Python functions for each task
-├── data/
-│   ├── heart_disease_uci.csv            # Input dataset
-│   ├── processed_heart_disease.csv      # Cleaned dataset
-│   ├── scaled_heart_disease.csv         # Scaled dataset
-├── models/
-│   └── dbscan_model.pkl                 # Saved trained model
-├── docker-compose.yaml                  # Airflow Docker configuration
-├── Dockerfile                           # Environment setup
-└── README.md
-
----
-
 ## ⚙️ Airflow DAG Overview
 The DAG is named **`Airflow_Lab1_HeartDisease`** and includes the following tasks:
 
