@@ -51,32 +51,32 @@ pickle
 numpy
 apache-airflow==2.5.1
 
-
+```
 ⸻
 
 🚀 Setup and Execution
 
 1️⃣ Clone the Repository
-
+``` bash
 git clone https://github.com/Gnanasudharsan/MlOps_Airflow.git
 cd MlOps_Airflow
-
+```
 2️⃣ Start Airflow in Docker
-
+``` bash
 docker compose up -d
-
+```
 Wait until you see the message:
-
+```bash
 airflow-webserver | 127.0.0.1 - - "GET /health HTTP/1.1" 200 -
-
+```
 3️⃣ Access Airflow UI
 
 Visit http://localhost:8080
 Login using:
-
+``` bash
 Username: airflow
 Password: airflow
-
+```
 4️⃣ Trigger the DAG
 	•	Go to DAGs → Airflow_Lab1_HeartDisease
 	•	Turn it ON
@@ -84,9 +84,9 @@ Password: airflow
 	•	Monitor progress under the Graph View
 
 When successful, all tasks will appear green ✅:
-
+``` bash
 load_data → data_preprocessing → build_save_model → evaluate_model
-
+```
 
 ⸻
 
@@ -100,11 +100,11 @@ scaled_heart_disease.csv	/opt/airflow/dags/data	Normalized dataset
 dbscan_model.pkl	/opt/airflow/dags/models	Trained DBSCAN model
 
 You can verify via Docker:
-
+``` bash
 docker exec -it lab_1-airflow-webserver-1 bash
 ls /opt/airflow/dags/data
 ls /opt/airflow/dags/models
-
+```
 
 ⸻
 
